@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "develop",
+			"path": "portfolio-minimal",
+			"problemMatcher": [],
+			"label": "gatsby develop",
+			"detail": "gatsby develop"
+		}
+	]
+}

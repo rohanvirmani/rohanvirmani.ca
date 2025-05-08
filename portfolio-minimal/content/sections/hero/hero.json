@@ -1,0 +1,22 @@
+{
+  "intro": "Hey",
+  "heroPhoto": {
+    "src": "../../images/rohan.png",
+    "alt": "My Photo"
+  },
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "I'm Rohan Virmani",
+  "subtitle": {
+    "prefix": "Senior Developer, ",
+    "highlight": "Backend and Devops",
+    "suffix": "."
+  },
+  "description": "Film and Technology Enthusiast",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "showIcons": false
+  }
+}
