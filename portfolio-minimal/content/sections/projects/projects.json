@@ -2,14 +2,14 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
-      "title": "Add content and deploy!",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "category": "RohanVirmani.ca",
+      "title": "Portfolio website with Blog",
+      "description": "Personal website and Blog developed with Gatsby. Hosted on a Toronto based VPS using NGINX.",
+      "tags": ["Development", "React"],
       "image": {
         "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "alt": "",
+        "linkTo": "https://github.com/rohanvirmani/rohanvirmani.ca"
       },
       "links": [
         {
