@@ -9,18 +9,10 @@ jobs:
 
     runs-on: self-hosted
 
-    strategy:
-      matrix:
-        node-version: [24.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm i
+
+    - run: docker build -t registry.localhost/rohanvirmani.ca:latest .
       working-directory: portfolio-minimal
-    - run: gatsby build
+    - run: docker push registry.localhost/rohanvirmani.ca:latest
       working-directory: portfolio-minimal
