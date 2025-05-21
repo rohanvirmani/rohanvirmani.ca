@@ -14,7 +14,11 @@ jobs:
 
     - run: docker build -t registry.localhost/rohanvirmani.ca:latest .
       working-directory: portfolio-minimal
-    - run: docker login https://rohanvirmani.ca -u ${{docker_user}} -p ${{docker_password}}
-      working-directory: portfolio-minimal
+    - name: Log in to Docker Registry
+      uses: docker/login-action@v3
+      with:
+        registry: rohanvirmani.ca # Your registry domain
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
     - run: docker push registry.localhost/rohanvirmani.ca:latest
       working-directory: portfolio-minimal
