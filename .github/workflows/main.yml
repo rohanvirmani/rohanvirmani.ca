@@ -15,7 +15,7 @@ jobs:
     - name: Log in to Docker Registry
       uses: docker/login-action@v3
       with:
-        registry: rohanvirmani.ca # Your registry domain
+        registry: rohanvirmani.ca/docker # Your registry domain
         username: ${{ secrets.DOCKER_USER_NAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         
