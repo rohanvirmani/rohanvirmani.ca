@@ -21,6 +21,6 @@ jobs:
         
     - name: Build and push Docker image
       run: |
-        docker build -t rohanvirmani.ca/portfoliowebsite:latest .
-        docker push rohanvirmani.ca/portfoliowebsite:latest
+        docker build -t docker.rohanvirmani.ca/portfoliowebsite:latest .
+        docker push docker.rohanvirmani.ca/portfoliowebsite:latest
       working-directory: portfolio-minimal
