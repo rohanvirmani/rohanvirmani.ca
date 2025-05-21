@@ -14,5 +14,7 @@ jobs:
 
     - run: docker build -t registry.localhost/rohanvirmani.ca:latest .
       working-directory: portfolio-minimal
+    - run: docker login https://rohanvirmani.ca -u ${{docker_user}} -p ${{docker_password}}
+      working-directory: portfolio-minimal
     - run: docker push registry.localhost/rohanvirmani.ca:latest
       working-directory: portfolio-minimal
