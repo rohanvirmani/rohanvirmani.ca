@@ -1,6 +1,13 @@
 module.exports = {
   plugins: [
     {
+      
+        resolve: "gatsby-plugin-decap-cms",
+        options: {
+          modulePath: `${__dirname}/src/cms/cms.js`,
+        },
+      
+
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
         siteUrl: "https://rohanvirmani.ca", // Used for sitemap generation
